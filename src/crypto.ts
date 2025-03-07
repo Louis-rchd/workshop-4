@@ -27,10 +27,10 @@ export async function generateRsaKeyPair() {
     {
       name: "RSA-OAEP",
       modulusLength: 2048,
-      publicExponent: new Uint8Array([1, 0, 1]), // 65537
+      publicExponent: new Uint8Array([1, 0, 1]),
       hash: "SHA-256",
     },
-    true, // extractable
+    true,
     ["encrypt", "decrypt"]
   );
 

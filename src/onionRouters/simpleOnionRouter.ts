@@ -32,7 +32,6 @@ export async function simpleOnionRouter(nodeId: number) {
 
   // Mock route to get the private key for the node
   onionRouter.get("/getPrivateKey", (req, res) => {
-    // In a real-world scenario, you would return an actual private key here.
     res.json({ privateKey: `privateKey-${nodeId}` });
   });
 
